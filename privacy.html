@@ -22,7 +22,7 @@
 </head>
 <body>
 <h1>Privacy Policy — Traeller</h1>
-<p class="muted">Last updated: 16.10.2026</p>
+<p class="muted">Last updated: 12.11.2026</p>
 
 <h2>1. Who is responsible</h2>
 <p>
@@ -31,6 +31,7 @@
   Email: <a href="mailto:traeller.app@gmail.com">traeller.app@gmail.com</a>
 </p>
 <p>(See also the <a href="impressum.html">Imprint</a>.)</p>
+<p>This policy applies to everyone who uses Traeller, wherever they live. Your data is stored in the EU (section 3).</p>
 
 <h2>2. What data we process, and why</h2>
 <p>Traeller is a bird-song identification and collection game. We keep data to a minimum.</p>
@@ -39,32 +40,42 @@
     <tr><th>Data</th><th>When</th><th>Purpose</th><th>Legal basis (GDPR Art. 6)</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>Email address</strong></td><td>If you sign up with email</td><td>Account creation + passwordless login (one-time codes)</td><td>6(1)(b) contract</td></tr>
-    <tr><td><strong>Display name</strong></td><td>At sign-up</td><td>Shown on leaderboards</td><td>6(1)(b) contract</td></tr>
-    <tr><td><strong>Catches</strong> — species, confidence, timestamp, and <strong>location</strong> (precise GPS coordinates, the region/country)</td><td>Each time you catch a bird</td><td>Build your Birdex + rank you on local/regional/global leaderboards</td><td>6(1)(b) contract</td></tr>
-    <tr><td><strong>Anti-abuse signals</strong> — capture rate, catch locations/times</td><td>Each catch</td><td>Detect implausible/faked catches to keep leaderboards fair</td><td>6(1)(f) legitimate interest</td></tr>
+    <tr><td><strong>Email address</strong></td><td>At sign-up</td><td>Account creation + passwordless login (one-time codes)</td><td>6(1)(b) contract</td></tr>
+    <tr><td><strong>Display name</strong></td><td>At sign-up</td><td>Shown on leaderboards and with your Birdex (below)</td><td>6(1)(b) contract</td></tr>
+    <tr><td><strong>Catches</strong> — species, confidence, timestamp, and <strong>location</strong> (precise GPS coordinates, the area, country and continent they fall in)</td><td>Each time you catch a bird</td><td>Build your Birdex + rank you on area/country/continent/global leaderboards</td><td>6(1)(b) contract</td></tr>
+    <tr><td><strong>Anti-abuse signals</strong> — capture rate, catch locations/times</td><td>Each catch</td><td>Detect implausible/faked catches to keep leaderboards fair; flagged catches may be checked by us by hand</td><td>6(1)(f) legitimate interest</td></tr>
+    <tr><td><strong>Server logs</strong> — IP address, time, the request</td><td>Each connection</td><td>Operating and securing the service; kept by our hosting provider for a few days</td><td>6(1)(f) legitimate interest</td></tr>
     <tr><td><strong>Authentication tokens</strong></td><td>While signed in</td><td>Stored <strong>only on your device</strong> (secure keychain/keystore) to keep you logged in</td><td>6(1)(b) contract</td></tr>
   </tbody>
 </table>
-<p><strong>Microphone / audio:</strong> birdsong is recorded and analysed <strong>on your device</strong>. The <strong>raw audio is never uploaded</strong> and is discarded after identification — only the resulting species + the small metrics above are stored.</p>
+<p><strong>Microphone / audio:</strong> birdsong is recorded and analysed <strong>on your device</strong>. The <strong>raw audio is never uploaded</strong> and is discarded after identification — only the resulting species and its confidence are stored.</p>
+<p><strong>Location:</strong> your coordinates are sent with each catch; our server works out the area (e.g. a district, state or province) from them. To name the place in the app, your phone’s operating system also looks the coordinates up with its own geocoding service (Apple on iOS, Google on Android) — under Apple’s or Google’s privacy terms.</p>
+<p><strong>What other players see:</strong> your display name, your points and rank on the leaderboards, and — when a signed-in player taps your entry — your Birdex: the species you’ve caught, their rarity, the date of your first catch, how often you’ve caught each, and the country of the first catch. Never your email address, your coordinates or your individual catches.</p>
 <p>We do <strong>not</strong> use advertising, analytics/tracking SDKs, or profiling, and we do <strong>not</strong> sell or share your data for marketing.</p>
 
 <h2>3. Who processes data on our behalf</h2>
 <ul>
-  <li><strong>Supabase</strong> (database, authentication, hosting) — data is stored in the <strong>Central EU (Frankfurt)</strong> region, within the EU/EEA.</li>
+  <li><strong>Supabase</strong> (database, authentication, file hosting) — data is stored in the <strong>Central EU (Frankfurt)</strong> region, within the EU/EEA. Images and sounds are delivered through its content delivery network.</li>
   <li><strong>Resend</strong> — sends the one-time login codes to your email address.</li>
+  <li><strong>GitHub</strong> — stores our database backups, <strong>encrypted</strong> before upload, so GitHub cannot read them.</li>
 </ul>
 
-<h2>4. How long we keep it</h2>
-<p>We keep your account and catches until <strong>you delete your account</strong>. You can delete it at any time in <strong>Settings → Delete account</strong>, which permanently removes your profile and all your catches. Backups are rotated and purged within 7 days.</p>
+<h2>4. International users and transfers</h2>
+<p>Traeller is available worldwide; whatever country you use it from, your data is stored in the EU. Supabase, Resend and GitHub are companies based in the USA (or with US parent companies), so data may be accessed from or processed in the USA. Such transfers are based on the EU Standard Contractual Clauses (Art. 46 GDPR) and, where the provider is certified, the EU–US Data Privacy Framework (Art. 45 GDPR).</p>
 
-<h2>5. Your rights (GDPR)</h2>
-<p>You have the right to access (Art. 15), rectify (16), erase (17), restrict (18), port (20), and object (21) to the processing of your data, and to withdraw consent at any time. Erasure is self-service via <strong>Settings → Delete account</strong>; for anything else, contact <a href="mailto:traeller.app@gmail.com">traeller.app@gmail.com</a>. You also have the right to lodge a complaint with a supervisory authority (in Germany, your state’s Datenschutzbehörde).</p>
+<h2>5. How long we keep it</h2>
+<p>We keep your account and catches until <strong>you delete your account</strong>. You can delete it at any time in <strong>Settings → Delete account</strong>, which immediately and permanently removes your profile and all your catches. Encrypted backups are kept for <strong>60 days</strong> and only used to restore the service after a failure; deleted data disappears from them when they expire.</p>
 
-<h2>6. Children</h2>
-<p>Traeller is not directed at children under 12. We do not knowingly collect data from them.</p>
+<h2>6. Your rights</h2>
+<p><strong>Everyone:</strong> you can see your data in the app and delete your account and all your data at any time (<strong>Settings → Delete account</strong>). For anything else — a copy of your data, a correction (e.g. of your display name), a question — email <a href="mailto:traeller.app@gmail.com">traeller.app@gmail.com</a>; we answer within 30 days. We never treat you differently for using these rights.</p>
+<p><strong>EU/EEA, UK and Switzerland (GDPR):</strong> you have the right to access (Art. 15), rectify (16), erase (17), restrict (18), port (20), and object (21) to the processing of your data, and to withdraw consent at any time. You also have the right to lodge a complaint with a supervisory authority (in Germany, your state’s Datenschutzbehörde).</p>
+<p><strong>California (CCPA/CPRA):</strong> we collect the categories in section 2 (identifiers, geolocation, game activity) for the purposes listed there. We do <strong>not sell or share</strong> personal information and don’t use it for targeted advertising. You have the right to know, access, correct and delete it.</p>
+<p><strong>Brazil (LGPD), Japan (APPI) and other countries:</strong> you have the rights your local law grants — including access, correction, deletion, information about the providers in section 3 and the transfers in section 4. Use the same email address.</p>
 
-<h2>7. Changes</h2>
+<h2>7. Children</h2>
+<p>Traeller is not directed at children under 13, and we do not knowingly collect data from them. If you are under 16 and live in the EU/EEA, ask a parent or guardian before signing up. If you believe a child has given us data, email us and we’ll delete it.</p>
+
+<h2>8. Changes</h2>
 <p>We may update this policy; the “Last updated” date reflects the latest version. Material changes will be surfaced in the app.</p>
 </body>
 </html>

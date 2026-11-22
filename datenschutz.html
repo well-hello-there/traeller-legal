@@ -22,7 +22,7 @@
 </head>
 <body>
 <h1>Datenschutzerklärung — Träller</h1>
-<p class="muted">Zuletzt aktualisiert: 16.10.2026</p>
+<p class="muted">Zuletzt aktualisiert: 12.11.2026</p>
 
 <h2>1. Verantwortlicher</h2>
 <p>
@@ -31,6 +31,7 @@
   E-Mail: <a href="mailto:traeller.app@gmail.com">traeller.app@gmail.com</a>
 </p>
 <p>(Siehe auch das <a href="impressum.html">Impressum</a>.)</p>
+<p>Diese Erklärung gilt für alle, die Träller nutzen, egal wo sie leben. Deine Daten werden in der EU gespeichert (Abschnitt 3).</p>
 
 <h2>2. Welche Daten wir verarbeiten – und warum</h2>
 <p>Träller ist ein Spiel zum Erkennen und Sammeln von Vogelstimmen. Wir verarbeiten so wenig Daten wie möglich.</p>
@@ -39,32 +40,42 @@
     <tr><th>Daten</th><th>Wann</th><th>Zweck</th><th>Rechtsgrundlage (Art. 6 DSGVO)</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>E-Mail-Adresse</strong></td><td>Bei Registrierung per E-Mail</td><td>Kontoerstellung + passwortloser Login (Einmalcodes)</td><td>6 Abs. 1 lit. b (Vertrag)</td></tr>
-    <tr><td><strong>Anzeigename</strong></td><td>Bei der Registrierung</td><td>Anzeige in den Bestenlisten</td><td>6 Abs. 1 lit. b (Vertrag)</td></tr>
-    <tr><td><strong>Fänge</strong> — Art, Konfidenz, Zeitstempel und <strong>Standort</strong> (genaue GPS-Koordinaten, Region/Land)</td><td>Bei jedem Fang</td><td>Aufbau deines Birdex + Platzierung in lokalen/regionalen/globalen Bestenlisten</td><td>6 Abs. 1 lit. b (Vertrag)</td></tr>
-    <tr><td><strong>Missbrauchssignale</strong> — Fanghäufigkeit, Fangorte/-zeiten</td><td>Bei jedem Fang</td><td>Erkennung unplausibler/gefälschter Fänge, um faire Bestenlisten zu sichern</td><td>6 Abs. 1 lit. f (berechtigtes Interesse)</td></tr>
+    <tr><td><strong>E-Mail-Adresse</strong></td><td>Bei der Registrierung</td><td>Kontoerstellung + passwortloser Login (Einmalcodes)</td><td>6 Abs. 1 lit. b (Vertrag)</td></tr>
+    <tr><td><strong>Anzeigename</strong></td><td>Bei der Registrierung</td><td>Anzeige in den Bestenlisten und bei deinem Birdex (siehe unten)</td><td>6 Abs. 1 lit. b (Vertrag)</td></tr>
+    <tr><td><strong>Fänge</strong> — Art, Konfidenz, Zeitstempel und <strong>Standort</strong> (genaue GPS-Koordinaten, das Gebiet, Land und der Kontinent, in dem sie liegen)</td><td>Bei jedem Fang</td><td>Aufbau deines Birdex + Platzierung in den Bestenlisten (Gebiet/Land/Kontinent/global)</td><td>6 Abs. 1 lit. b (Vertrag)</td></tr>
+    <tr><td><strong>Missbrauchssignale</strong> — Fanghäufigkeit, Fangorte/-zeiten</td><td>Bei jedem Fang</td><td>Erkennung unplausibler/gefälschter Fänge, um faire Bestenlisten zu sichern; markierte Fänge prüfen wir ggf. von Hand</td><td>6 Abs. 1 lit. f (berechtigtes Interesse)</td></tr>
+    <tr><td><strong>Server-Logs</strong> — IP-Adresse, Zeitpunkt, die Anfrage</td><td>Bei jeder Verbindung</td><td>Betrieb und Absicherung des Dienstes; bei unserem Hosting-Anbieter wenige Tage gespeichert</td><td>6 Abs. 1 lit. f (berechtigtes Interesse)</td></tr>
     <tr><td><strong>Authentifizierungs-Token</strong></td><td>Während du angemeldet bist</td><td>Ausschließlich <strong>auf deinem Gerät</strong> gespeichert (sicherer Keychain/Keystore), um dich angemeldet zu halten</td><td>6 Abs. 1 lit. b (Vertrag)</td></tr>
   </tbody>
 </table>
-<p><strong>Mikrofon / Audio:</strong> Vogelgesang wird <strong>auf deinem Gerät</strong> aufgenommen und ausgewertet. Die <strong>Rohaufnahme wird niemals hochgeladen</strong> und nach der Erkennung verworfen — gespeichert werden nur die ermittelte Art und die kleinen Kennzahlen oben.</p>
+<p><strong>Mikrofon / Audio:</strong> Vogelgesang wird <strong>auf deinem Gerät</strong> aufgenommen und ausgewertet. Die <strong>Rohaufnahme wird niemals hochgeladen</strong> und nach der Erkennung verworfen — gespeichert werden nur die ermittelte Art und ihre Konfidenz.</p>
+<p><strong>Standort:</strong> Deine Koordinaten werden mit jedem Fang übertragen; unser Server ermittelt daraus das Gebiet (z. B. Landkreis, Bundesstaat oder Provinz). Um den Ort in der App zu benennen, schlägt außerdem das Betriebssystem deines Handys die Koordinaten bei seinem eigenen Geocoding-Dienst nach (Apple unter iOS, Google unter Android) — nach den Datenschutzbestimmungen von Apple bzw. Google.</p>
+<p><strong>Was andere Spieler sehen:</strong> deinen Anzeigenamen, deine Punkte und deinen Rang in den Bestenlisten und — wenn ein angemeldeter Spieler auf deinen Eintrag tippt — dein Birdex: die Arten, die du gefangen hast, ihre Seltenheit, das Datum deines ersten Fangs, wie oft du jede gefangen hast, und das Land des ersten Fangs. Niemals deine E-Mail-Adresse, deine Koordinaten oder einzelne Fänge.</p>
 <p>Wir verwenden <strong>keine</strong> Werbung, <strong>keine</strong> Analyse-/Tracking-SDKs und <strong>kein</strong> Profiling, und wir <strong>verkaufen</strong> deine Daten nicht und geben sie nicht zu Werbezwecken weiter.</p>
 
 <h2>3. Auftragsverarbeiter</h2>
 <ul>
-  <li><strong>Supabase</strong> (Datenbank, Authentifizierung, Hosting) — die Daten werden in der Region <strong>Central EU (Frankfurt)</strong> innerhalb der EU/des EWR gespeichert.</li>
+  <li><strong>Supabase</strong> (Datenbank, Authentifizierung, Datei-Hosting) — die Daten werden in der Region <strong>Central EU (Frankfurt)</strong> innerhalb der EU/des EWR gespeichert. Bilder und Töne werden über dessen Content-Delivery-Netzwerk ausgeliefert.</li>
   <li><strong>Resend</strong> — versendet die Einmal-Login-Codes an deine E-Mail-Adresse.</li>
+  <li><strong>GitHub</strong> — speichert unsere Datenbank-Backups, <strong>vor dem Hochladen verschlüsselt</strong>, sodass GitHub sie nicht lesen kann.</li>
 </ul>
 
-<h2>4. Speicherdauer</h2>
-<p>Wir speichern dein Konto und deine Fänge, bis <strong>du dein Konto löschst</strong>. Du kannst es jederzeit unter <strong>Einstellungen → Konto löschen</strong> entfernen; dabei werden dein Profil und alle deine Fänge dauerhaft gelöscht. Backups werden rotiert und innerhalb von 7 Tagen bereinigt.</p>
+<h2>4. Internationale Nutzung und Datenübermittlung</h2>
+<p>Träller ist weltweit verfügbar; egal aus welchem Land du es nutzt, deine Daten werden in der EU gespeichert. Supabase, Resend und GitHub sind Unternehmen mit Sitz in den USA (oder mit US-Muttergesellschaft), daher kann auf Daten aus den USA zugegriffen bzw. können sie dort verarbeitet werden. Grundlage dafür sind die EU-Standardvertragsklauseln (Art. 46 DSGVO) und, soweit der Anbieter zertifiziert ist, das EU-US Data Privacy Framework (Art. 45 DSGVO).</p>
 
-<h2>5. Deine Rechte (DSGVO)</h2>
-<p>Du hast das Recht auf Auskunft (Art. 15), Berichtigung (16), Löschung (17), Einschränkung (18), Datenübertragbarkeit (20) und Widerspruch (21) sowie das Recht, eine erteilte Einwilligung jederzeit zu widerrufen. Die Löschung ist selbst durchführbar über <strong>Einstellungen → Konto löschen</strong>; für alles Weitere wende dich an <a href="mailto:traeller.app@gmail.com">traeller.app@gmail.com</a>. Zudem hast du das Recht, dich bei einer Aufsichtsbehörde zu beschweren (in Deutschland die Datenschutzbehörde deines Bundeslandes).</p>
+<h2>5. Speicherdauer</h2>
+<p>Wir speichern dein Konto und deine Fänge, bis <strong>du dein Konto löschst</strong>. Du kannst es jederzeit unter <strong>Einstellungen → Konto löschen</strong> entfernen; dabei werden dein Profil und alle deine Fänge sofort und dauerhaft gelöscht. Verschlüsselte Backups werden <strong>60 Tage</strong> aufbewahrt und nur genutzt, um den Dienst nach einem Ausfall wiederherzustellen; gelöschte Daten verschwinden aus ihnen, sobald sie ablaufen.</p>
 
-<h2>6. Kinder</h2>
-<p>Träller richtet sich nicht an Kinder unter 12 Jahren. Wir erheben wissentlich keine Daten von ihnen.</p>
+<h2>6. Deine Rechte</h2>
+<p><strong>Für alle:</strong> Du kannst deine Daten in der App einsehen und dein Konto samt aller Daten jederzeit löschen (<strong>Einstellungen → Konto löschen</strong>). Für alles Weitere — eine Kopie deiner Daten, eine Berichtigung (z. B. deines Anzeigenamens), eine Frage — schreib an <a href="mailto:traeller.app@gmail.com">traeller.app@gmail.com</a>; wir antworten innerhalb von 30 Tagen. Wer diese Rechte nutzt, wird nicht benachteiligt.</p>
+<p><strong>EU/EWR, Vereinigtes Königreich und Schweiz (DSGVO):</strong> Du hast das Recht auf Auskunft (Art. 15), Berichtigung (16), Löschung (17), Einschränkung (18), Datenübertragbarkeit (20) und Widerspruch (21) sowie das Recht, eine erteilte Einwilligung jederzeit zu widerrufen. Zudem hast du das Recht, dich bei einer Aufsichtsbehörde zu beschweren (in Deutschland die Datenschutzbehörde deines Bundeslandes).</p>
+<p><strong>Kalifornien (CCPA/CPRA):</strong> Wir erheben die Kategorien aus Abschnitt 2 (Kennungen, Standort, Spielaktivität) zu den dort genannten Zwecken. Wir <strong>verkaufen und teilen</strong> personenbezogene Daten <strong>nicht</strong> und nutzen sie nicht für zielgerichtete Werbung. Du hast das Recht auf Auskunft, Zugang, Berichtigung und Löschung.</p>
+<p><strong>Brasilien (LGPD), Japan (APPI) und andere Länder:</strong> Du hast die Rechte, die dein lokales Recht gewährt — darunter Auskunft, Berichtigung, Löschung sowie Information über die Anbieter aus Abschnitt 3 und die Übermittlungen aus Abschnitt 4. Nutze dieselbe E-Mail-Adresse.</p>
 
-<h2>7. Änderungen</h2>
+<h2>7. Kinder</h2>
+<p>Träller richtet sich nicht an Kinder unter 13 Jahren, und wir erheben wissentlich keine Daten von ihnen. Wenn du unter 16 bist und in der EU/im EWR lebst, frag vor der Registrierung deine Eltern oder Erziehungsberechtigten. Wenn du glaubst, dass ein Kind uns Daten übermittelt hat, schreib uns — wir löschen sie.</p>
+
+<h2>8. Änderungen</h2>
 <p>Wir können diese Erklärung aktualisieren; das Datum „Zuletzt aktualisiert“ gibt die jeweils aktuelle Fassung an. Wesentliche Änderungen werden in der App kenntlich gemacht.</p>
 </body>
 </html>
